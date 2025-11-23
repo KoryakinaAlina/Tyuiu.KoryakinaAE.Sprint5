@@ -9,7 +9,7 @@ namespace Tyuiu.KoryakinaAE.Sprint5.Task0.V3.Test
         [TestMethod]
         public void ValidSaveToFileTextData()
         {
-            string path = $@"C:\Users\korya\source\repos\Tyuiu.KoryakinaAE.Sprint5\Tyuiu.KoryakinaAE.Sprint5.Task0.V3\bin\Debug\net8.0\OutPutFileTask0.txt";
+            string path = $@"C:\Users\korya\source\repos\Tyuiu.KoryakinaAE.Sprint5\Tyuiu.KoryakinaAE.Sprint5.Task0.V3\bin\Debug\OutPutFileTask0.txt";
             bool result = File.Exists(path);
             Assert.AreEqual(true, result);
         }
