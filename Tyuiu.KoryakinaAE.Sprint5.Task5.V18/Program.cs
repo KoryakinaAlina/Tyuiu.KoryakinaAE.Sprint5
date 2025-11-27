@@ -1,0 +1,41 @@
+﻿using Tyuiu.KoryakinaAE.Sprint5.Task5.V18.Lib;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        DataService ds = new DataService();
+        Console.Title = "Спринт #5 | Выполнила: Корякина Алина Эльдаяговна| ИСТНб-25-1";
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* Спринт #5                                                               *");
+        Console.WriteLine("* Чтение набора данных из текстового файла                           *");
+        Console.WriteLine("* Задание #5                                                              *");
+        Console.WriteLine("* Вариант #18                                                             *");
+        Console.WriteLine("* Выполнила: Корякина Алина Эльдаяговна | ИСТНб-25-1                         *");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* УСЛОВИЕ:                                                                *");
+
+        Console.WriteLine("*Найти произведение всех двузначных чисел в файле. . *");
+        Console.WriteLine("*                                                                         *");
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+        Console.WriteLine("***************************************************************************");
+
+
+        string path = @"C:\DataSprint5\InPutDataFileTask5V18.txt";
+        Console.WriteLine(" Данные находятся в файле: " + path);
+
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("*                                                                         *");
+        Console.WriteLine("***************************************************************************");
+
+
+        Console.WriteLine("***************************************************************************");
+        Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+        Console.WriteLine("***************************************************************************");
+
+        double res = ds.LoadFromDataFile(path);
+        Console.WriteLine("Произведение двузначных элементов файла = " + res);
+        Console.ReadKey();
+    }
+}
